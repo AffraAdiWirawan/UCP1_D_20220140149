@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Day In My Life</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="greeting">
+        <script>
+          const today = new Date();
+          const hours = today.getHours();
+          const greeting = (hours < 12) ? "Good Morning" : (hours < 18) ? "Good Afternoon" : "Good Evening";
+          document.write(greeting);
+        </script>, Yogyakarta!
+      </div>
+      <div class="date-time">
+        <script>
+          const now = new Date();
+          const options = { year: 'numeric', month: 'long', day: 'numeric' };
+          const date = now.toLocaleDateString('en-US', options);
+          document.write(date);
+        </script>
+        <span>&nbsp;-&nbsp;</span>
+        <script>
+          const now = new Date();
+          const time = now.toLocaleTimeString('en-US', { hour: 'numeric', minute: 'numeric', second: 'numeric' });
+          document.write(time);
+        </script>
+      </div>
+    </div>
+  </header>
+
+  <nav>
+    <div class="container">
+      <a href="#" class="logo">A Day In My Life</a>
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="carousel">
+    <div class="container">
+      <div id="carousel-container">
+        <img src="Poster Bootcamp.png" alt="Image 1">
+        <img src="Poster Internship.png" alt="Image 2">
+        <img src="WhatsApp Image 2023-07-02 at 11.12.33.jpg" alt="Image 3">
+        </div>
+    </div>
+  </section>
+
+  <section class="cards">
+    <div class="container">
+      <h2>My Interests</h2>
+      <div class="card-container">
+        <div class="card">
+          <img src="Screenshot 2023-03-30 201740.png" alt="Hobby 1">
+          <h3>Hobby 1</h3>
+          <p>Ini adalah hobi saya membuat code sampai saya betul-betul puas</p>
+        </div>
+        <div class="card">
+          <img src="Screenshot 2023-03-30 201740.png" alt="Hobby 2">
+          <h3>Hobby 2</h3>
+          <p>Hobi saya adalah coding dibilang ga caya banget si</p>
+        </div>
+        <div class="card">
+          <img src="Screenshot 2023-03-30 201740.png" alt="Hobby 3">
+          <h3>Hobby 3</h3>
+          <p>Terserah deh, udah dibilang hobby saya ngoding</p>
+        </div>
+        </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 My Name</p>
+      <ul class="social-media">
+        <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
